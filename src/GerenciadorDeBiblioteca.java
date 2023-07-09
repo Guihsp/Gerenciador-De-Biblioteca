@@ -8,6 +8,7 @@ public class GerenciadorDeBiblioteca {
     public static void main(String[] args) throws Exception {
         // Declarando variaveis
         String[] tituloLivro = new String[100], autorLivro = new String[100];
+        boolean confimaSaida = false;
         int[] anoPublicacao = new int[100];
         int opcao = 0; // Opção da escolha do menu
         // Entrando no loop
@@ -69,7 +70,16 @@ public class GerenciadorDeBiblioteca {
                         break;
                     // Caso opção 5 seja digitada
                     case 5:
-                        System.out.println("Saindo do programa...");// Mesagem de encerramento do programa
+                        System.out.println(" Tem certeza que deseja sair?");
+                        System.out.print(" Digite 'Sim' se realmente deseja sair ou 'Não' para cancelar saida: ");
+                        String verificadorSaida = ler.nextLine();
+                        if(verificadorSaida.equalsIgnoreCase("sim")){
+                            confimaSaida = true;
+                            System.out.println("Saindo do programa...");// Mesagem de encerramento do programa
+                            break;
+                        } else{
+                            System.out.println(">>>Retornando ao menu<<<");
+                        }
                         break;
                     // Caso nenhuma opção valida seja digitada
                     default:
@@ -81,7 +91,7 @@ public class GerenciadorDeBiblioteca {
                 System.out.println(">>>Digite uma opção valida!!!<<<");
                 ler.nextLine();
             }
-        } while (opcao != 5);// A condição é caso a opção digitada seja diferente de 5 o loop/Programa
+        } while ( !confimaSaida);// A condição é caso a opção digitada seja diferente de 5 o loop/Programa
                              // continue rodando caso contrario ele encerra
     }
 
@@ -149,6 +159,7 @@ public class GerenciadorDeBiblioteca {
             } else {// Caso o não digitar "sair"
                 if (indice == -1) { // Se o indice do array retornado pelo metodo pesquisarLivro for igual a -1
                     System.out.println("Esse livro não está cadastrado!");
+                    break;
                 } else {// Caso o indice do array retornado pelo metodo pesquisarLivro
                     tituloLivro[indice] = null; // remove o título do livro do array
                     autorLivro[indice] = null; // remove o autor do livro do array
