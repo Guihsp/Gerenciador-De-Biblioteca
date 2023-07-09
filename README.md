@@ -1,18 +1,8 @@
-## Getting Started
+# Gerenciador De Biblioteca 
+Projeto feito em java para o Projeto Integrador da faculdade no primeiro semestre.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## SOBRE:
+Esse é um algorítimo JAVA de Gerenciador de Biblioteca feito, onde você pode cadastrar, pesquisar, remover e listar 100 livros diferentes.
+O Programa foi feito utilizando apenas fundamentos do JAVA, como estrutura condicional, estrutura de repetição, vetor e operadores básicos.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Para acessar o condigo-fonte vá em src/GerenciadorDeBiblioteca.java ou [Clique aqui](https://github.com/Guihsp/Gerenciador-De-Biblioteca/blob/main/src/GerenciadorDeBiblioteca.java)
