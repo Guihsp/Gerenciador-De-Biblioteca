@@ -1,5 +1,5 @@
 # Gerenciador De Biblioteca 
-Projeto feito em java para o Projeto Integrador da faculdade no primeiro semestre.
+Projeto feito em java para o Projeto Integrador em grupo da faculdade no primeiro semestre de ADS(Análise e Desenvolvimento de sistemas).
 
 ## SOBRE:
 Esse é um algorítimo JAVA de Gerenciador de Biblioteca feito, onde você pode cadastrar, pesquisar, remover e listar 100 livros diferentes.
